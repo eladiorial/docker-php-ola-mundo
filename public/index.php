@@ -2,17 +2,17 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Docker PHP Hello World</title>
+    <title>Docker PHP Ola Mundo</title>
   </head>
   <body>
-    <? if ($_POST['who'] != '') {?>
-      <h1>Hello <? echo htmlspecialchars($_POST['who']); ?></h1>
-      <a href="index.php">Greet someone else</a>
+    <? if ($_POST['quen'] != '') {?>
+      <h1>Ola <?php echo htmlspecialchars($_POST['quen']); ?></h1>
+      <a href="index.php">Saúda a alguén máis</a>
     <? } else { ?>
-      <form class="greetingForm" action="index.php" method="post">
-        <label for="who">Say hello to</label>
-        <input type="text" name="who">
-        <input type="submit" name="greet" value="Say Hello">
+      <form class="saudosForm" action="index.php" method="post">
+        <label for="quen">Di ola a</label>
+        <input type="text" name="quen">
+        <input type="submit" name="saudo" value="Di ola">
       </form>
     <? } ?>
   </body>
